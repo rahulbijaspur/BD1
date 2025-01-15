@@ -1,6 +1,10 @@
 const express = require('express');
 const app = express();
 const port = 3000;
+const cors = require('cors');
+
+
+app.use(cors());
 
 // Endpoint 1: Calculate total cart value
 app.get('/cart-total', (req, res) => {
